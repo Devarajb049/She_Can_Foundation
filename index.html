@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She Can Foundation | Empowering Women, Transforming Lives</title>
+  <meta name="description" content="She Can Foundation is a dedicated NGO driving women empowerment through skill development, menstrual hygiene, quality education, and equality initiatives.">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  
+  <!-- Core Design System Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================================================================
+       1. GLASSMORPHIC NAVBAR WITH DIRECTORY LINKS & THEME TOGGLE
+       ================================================================ -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <i class="fa-solid fa-venus-mars"></i> She Can Foundation
+      </a>
+      
+      <button class="navbar-toggler navbar-toggler-custom" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item theme-toggle-wrapper">
+            <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================================
+       2. HERO SECTION
+       ================================================================ -->
+  <section class="hero-main" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 fade-in-up">
+          <span class="badge bg-gradient-main text-white px-3 py-2 rounded-pill mb-3">Empowering Lives</span>
+          <h1 class="hero-title text-gradient">
+            Empowering Women, Transforming Lives
+          </h1>
+          <p class="hero-desc">
+            We provide girls and women in underprivileged communities with education, menstrual hygiene awareness, job opportunities, and mental health support. Together, let's bridge the gap and craft a brighter, equal tomorrow.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-glow">
+              Join Us <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="about.html" class="btn-outline-custom">
+              Learn More <i class="fa-solid fa-circle-info"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center fade-in-up" style="transition-delay: 0.2s;">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop" 
+                 alt="Empowered Women Together" class="img-fluid rounded-2xl">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       3. MISSION / FEATURES SECTION
+       ================================================================ -->
+  <section class="bg-section" id="mission">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>Our Core Pillars</h2>
+        <p>Our work centers around building long-term sustainable frameworks for empowering marginalized women and young girls.</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Card 1: Education -->
+        <div class="col-lg-4 col-md-6 fade-in-up" style="transition-delay: 0.1s;">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Education & Literacy</h3>
+            <p>Breaking cycles of poverty by helping girls secure school fees, digital literacy mentoring, and vital vocational training tailored for modern occupations.</p>
+          </div>
+        </div>
+        
+        <!-- Card 2: Equality -->
+        <div class="col-lg-4 col-md-6 fade-in-up" style="transition-delay: 0.2s;">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3>Gender Equality</h3>
+            <p>Advocating for female leadership, organizing legal awareness clinics, and running gender sensitization courses to dismantle structural barriers.</p>
+          </div>
+        </div>
+        
+        <!-- Card 3: Community Support -->
+        <div class="col-lg-4 col-md-12 fade-in-up" style="transition-delay: 0.3s;">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3>Community Support</h3>
+            <p>Delivering monthly menstrual hygiene dignity kits, hosting physical and mental health consultation camps, and fostering active mother-child support circles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       4. STATS / DYNAMIC COUNTERS SECTION
+       ================================================================ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row text-center g-4">
+        <!-- Stat item 1 -->
+        <div class="col-md-4 col-sm-6 stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="stat-number"><span class="counter-value" data-target="10000">0</span>+</div>
+          <div class="stat-label">Girls Empowered</div>
+        </div>
+        
+        <!-- Stat item 2 -->
+        <div class="col-md-4 col-sm-6 stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-kit-medical"></i></div>
+          <div class="stat-number"><span class="counter-value" data-target="25000">0</span>+</div>
+          <div class="stat-label">Dignity Kits Distributed</div>
+        </div>
+        
+        <!-- Stat item 3 -->
+        <div class="col-md-4 col-sm-12 stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <div class="stat-number"><span class="counter-value" data-target="150">0</span>+</div>
+          <div class="stat-label">Hygiene Workshops</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       5. BECOME A VOLUNTEER SECTION
+       ================================================================ -->
+  <section id="volunteer">
+    <div class="container">
+      <div class="volunteer-cta fade-in-up text-center">
+        <h2 class="mb-3">Become a Volunteer</h2>
+        <p class="mx-auto mb-4" style="max-width: 700px; font-size: 1.1rem;">
+          Make an impact directly on ground. Join our growing global family of volunteers, mentors, and educators working towards a gender-equal society.
+        </p>
+        <a href="contact.html" class="btn-glow">
+          Volunteer Now <i class="fa-solid fa-user-plus"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       6. GLOBAL FOOTER
+       ================================================================ -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h4 class="navbar-brand-custom mb-3 text-white">
+            <i class="fa-solid fa-venus-mars text-white"></i> She Can Foundation
+          </h4>
+          <p class="footer-desc">
+            Empowering women and girls across underprivileged and marginalized societies through targeted educational access, advocacy, health initiatives, and community mentorship.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/shecanfoundation.ngo" class="footer-social-btn" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/she-can-foundation" class="footer-social-btn" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right me-2"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right me-2"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right me-2"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-12">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Delhi NCR Area, India</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@shecanfoundation.org</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-copyright">
+        <p>© 2026 She Can Foundation. All Rights Reserved. Made with <i class="fa-solid fa-heart text-danger"></i> for Women Empowerment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 Bundle JS with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Unified Interactions JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

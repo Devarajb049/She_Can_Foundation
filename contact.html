@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | She Can Foundation</title>
+  <meta name="description" content="Reach out to the She Can Foundation. Drop us a message, find our address, phone, and email information, or join us as a volunteer.">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  
+  <!-- Core Design System Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================================================================
+       1. GLASSMORPHIC NAVBAR (Same as Home/About)
+       ================================================================ -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <i class="fa-solid fa-venus-mars"></i> She Can Foundation
+      </a>
+      
+      <button class="navbar-toggler navbar-toggler-custom" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item theme-toggle-wrapper">
+            <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================================
+       2. INNER BANNER SECTION
+       ================================================================ -->
+  <section class="inner-banner">
+    <div class="container">
+      <h1 class="fade-in-up">Contact She Can Foundation</h1>
+      <div class="breadcrumb-custom fade-in-up" style="transition-delay: 0.1s;">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       3. CONTACT SECTION (TWO-COLUMN GRID)
+       ================================================================ -->
+  <section id="contact-details">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left Column: Contact details -->
+        <div class="col-lg-5 fade-in-up">
+          <div class="contact-info-card">
+            <span class="badge bg-gradient-main text-white px-3 py-2 rounded-pill mb-3">Connect</span>
+            <h2 class="mb-4">Get in Touch</h2>
+            <p class="mb-5 text-muted">
+              Have a question, feedback, or want to sponsor an initiative? Contact our representatives. We respond within 24 hours.
+            </p>
+            
+            <!-- Address -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Our Location</h4>
+                <p>Sector 62, Noida, Delhi NCR, Uttar Pradesh - 201301, India</p>
+              </div>
+            </div>
+            
+            <!-- Phone -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Phone Call</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Email Address</h4>
+                <p>info@shecanfoundation.org</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Interactive Form -->
+        <div class="col-lg-7 fade-in-up" style="transition-delay: 0.2s;">
+          <div class="contact-form-card">
+            <h3 class="mb-4 text-gradient">Send Us a Message</h3>
+            
+            <form id="contactForm" novalidate>
+              <!-- Name -->
+              <div class="form-group-custom">
+                <label for="userName" class="form-label text-main fw-medium">Your Name</label>
+                <input type="text" id="userName" class="form-control-custom" placeholder="Enter your full name" required>
+              </div>
+              
+              <!-- Email -->
+              <div class="form-group-custom">
+                <label for="userEmail" class="form-label text-main fw-medium">Email Address</label>
+                <input type="email" id="userEmail" class="form-control-custom" placeholder="Enter your email address" required>
+              </div>
+              
+              <!-- Message -->
+              <div class="form-group-custom">
+                <label for="userMessage" class="form-label text-main fw-medium">Your Message</label>
+                <textarea id="userMessage" class="form-control-custom" rows="5" placeholder="Tell us how we can collaborate..." required></textarea>
+              </div>
+              
+              <!-- Submit Button -->
+              <button type="submit" class="btn-glow w-100 justify-content-center">
+                Submit <i class="fa-solid fa-paper-plane ms-2"></i>
+              </button>
+            </form>
+            
+            <!-- Async response toast/container -->
+            <div id="successMessage" class="success-container">
+              <i class="fa-solid fa-circle-check fa-lg me-2"></i> Form Submitted Successfully
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       4. GLOBAL FOOTER (Same as Home/About)
+       ================================================================ -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h4 class="navbar-brand-custom mb-3 text-white">
+            <i class="fa-solid fa-venus-mars text-white"></i> She Can Foundation
+          </h4>
+          <p class="footer-desc">
+            Empowering women and girls across underprivileged and marginalized societies through targeted educational access, advocacy, health initiatives, and community mentorship.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/shecanfoundation.ngo" class="footer-social-btn" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/she-can-foundation" class="footer-social-btn" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right me-2"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right me-2"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right me-2"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-12">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Sector 62, Noida, Delhi NCR, Uttar Pradesh - 201301, India</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@shecanfoundation.org</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-copyright">
+        <p>© 2026 She Can Foundation. All Rights Reserved. Made with <i class="fa-solid fa-heart text-danger"></i> for Women Empowerment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 Bundle JS with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Unified Interactions JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
