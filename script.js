@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize all dynamic features
   initThemeManager();
   initStickyNavbar();
-  initScrollAnimations();
+  initAOS();
   initBackToTop();
   initImpactCounters();
   initContactForm();
@@ -60,30 +60,18 @@ function initStickyNavbar() {
 }
 
 /**
- * 3. SCROLL-INTO-VIEW ANIMATIONS (IntersectionObserver)
+ * 3. SCROLL-INTO-VIEW ANIMATIONS (AOS Library Integration)
  */
-function initScrollAnimations() {
-  const fadeElements = document.querySelectorAll(".fade-in-up");
-  if (fadeElements.length === 0) return;
-
-  const observerOptions = {
-    root: null, // viewport
-    rootMargin: "0px",
-    threshold: 0.15 // trigger when 15% of element is visible
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-        observer.unobserve(entry.target); // Stop observing once animated
-      }
+function initAOS() {
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 1000,      // smooth 1-second transitions
+      easing: 'ease-in-out', // smooth acceleration curve
+      once: true,          // animate once on scroll down
+      mirror: false,       // don't animate when scrolling up
+      anchorPlacement: 'top-bottom' // trigger animation when top of element reaches bottom of screen
     });
-  }, observerOptions);
-
-  fadeElements.forEach(element => {
-    observer.observe(element);
-  });
+  }
 }
 
 /**
